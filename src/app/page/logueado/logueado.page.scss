@@ -1,0 +1,48 @@
+.story-list{
+    padding: 16px 0 8px;
+    border-bottom: 1px solid #ddd;
+
+    .scroll-horizontal{
+        padding-left: 16px;
+        white-space: nowrap;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+
+
+        .scroll-item {
+            position: relative;
+            display: inline-block;
+            margin-right: 16px;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .item-label{
+            font-size: 13px;
+            margin-top: 23px;
+            color: blanchedalmond;
+           
+
+        }
+
+        ion-avatar{
+            &.has-update{
+                text-align: center;
+                padding: 2px;
+                background-color: black;
+            }
+        }
+
+
+
+
+
+    }
+
+
+
+
+
+
+}

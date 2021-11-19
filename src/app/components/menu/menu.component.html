@@ -1,0 +1,69 @@
+
+  <ion-menu side="start" menuId="menuPrincipal" contentId="main">
+    
+  <ion-content color="secondary">
+    
+    <br>
+    
+      <div class="ion-text-center">Menu</div>
+      <div  class="header-content">
+        <br>
+        <ion-item>
+          <ion-avatar>
+            <img src="assets/img/baki.jpg" alt=""></ion-avatar>
+          <ion-label>
+            <h2 class="ion-text-center"><b>Juan Francisco</b></h2>
+            <p class="ion-text-center">Ing.Informatico</p>
+          </ion-label>
+        </ion-item>
+      </div>
+      
+    <ion-list class="menu-items" lines="none">
+      <ion-menu-toggle auto-hide="true">
+      <ion-item>
+        <ion-icon name="sync-outline" (click)="actualizarDatos()" routerLink="['/actualizar']"></ion-icon> Actualizar Datos
+      </ion-item>
+      </ion-menu-toggle>
+
+
+      <ion-menu-toggle auto-hide="true">
+        <ion-item>
+          <ion-icon name="stats-chart-outline" routerLink=""></ion-icon> Asistencia
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle auto-hide="true">
+        <ion-item>
+          <ion-icon name="notifications-outline" routerLink=""></ion-icon> Notificaciones
+        </ion-item>
+      </ion-menu-toggle>
+      
+      
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+     <br>
+     <br>
+
+    
+      
+      
+        <ion-menu-toggle auto-hide="false">
+          <ion-item (click)="salir()" routerDirection="root" lines="none" detail="false">
+            <ion-icon [name]="'exit-outline'" ></ion-icon> Salir
+          </ion-item>
+        </ion-menu-toggle>
+
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+

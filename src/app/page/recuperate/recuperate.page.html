@@ -1,0 +1,48 @@
+
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-title class="ion-text-center"></ion-title>
+    <ion-buttons >
+      <ion-back-button  text=" " [routerLink]="['/login']"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-label position="floating">Nombre</ion-label>
+    <ion-input type="text"  [(ngModel)]="miModelo.soloTexto" name="soloTexto"  #soloTexto="ngModel" pattern="[a-zA-Z]*" required type="text" ></ion-input>
+  </ion-item>
+
+  <div class="form-error" *ngIf="soloTexto.errors && (soloTexto.dirty || soloTexto.touched)">
+    <p color="danger" [hidden]="!soloTexto.errors.required">Ingrese solo texto</p>
+  </div>
+
+
+  <ion-item>
+    <ion-label position="floating">Apellido</ion-label>
+    <ion-input type="text" [(ngModel)]="miModelo.soloTexto1" name="soloTexto1" #soloTexto1="ngModel" pattern="[a-zA-Z]*" required></ion-input>
+  </ion-item>
+
+  <div class="form-error" *ngIf="soloTexto1.errors && (soloTexto1.dirty || soloTexto1.touched)">
+    <p color="danger" [hidden]="!soloTexto1.errors.required">Ingrese solo texto</p>
+  </div>
+
+  <ion-item>
+    <ion-label position="floating">Correo</ion-label>
+    <ion-input type="text" [(ngModel)]="miModelo.correo" name="correo" #correo="ngModel" required email></ion-input>
+  </ion-item>
+
+  <div class="form-error" *ngIf="correo.errors && (correo.dirty || correo.touched)">
+    <p color="danger" [hidden]="!correo.errors.required">Ingrese un correo válido</p>
+  </div>
+
+  <re-captcha (resolved)="captchaResolved($event)" [siteKey]="siteKey"></re-captcha>
+
+  
+  <ion-button [disabled]="!isCaptchaValid"   color="success" expand="block" (click)="enviarcorreo()" [routerLink]="['/home']">Recuperar contraseña</ion-button>
+  
+
+
+</ion-content>

@@ -1,0 +1,113 @@
+
+<ion-app>
+<ion-header>
+    <ion-toolbar color="secondary">
+      <ion-title class="">Bienvenido</ion-title>
+      <ion-buttons slot="start">
+         <ion-button (click)="toggleMenu()">
+          <ion-icon slot="icon-only" name="menu"></ion-icon>
+        </ion-button>
+        
+      </ion-buttons>  
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="story-list">
+    <div class="scroll-horizontal">
+      
+      <div class="scroll-item" *ngFor="let i of [1]">
+        <div class="item-avatar">
+          <ion-avatar class="avatar-md has-update has-status">
+            <div class="item-label">
+              John
+            </div>
+          </ion-avatar>
+        </div>
+      </div>
+
+      <div class="scroll-item" *ngFor="let i of [1]">
+        <div class="item-avatar">
+          <ion-avatar class="avatar-md has-update has-status">
+            <div class="item-label">
+              
+              John
+            </div>
+          </ion-avatar>
+        </div>
+      </div>
+
+      <div class="scroll-item" *ngFor="let i of [1]">
+        <div class="item-avatar">
+          <ion-avatar class="avatar-md has-update has-status">
+            <div class="item-label">
+              
+              John
+            </div>
+          </ion-avatar>
+        </div>
+      </div>
+
+      <div class="scroll-item" *ngFor="let i of [1]">
+        <div class="item-avatar">
+          <ion-avatar class="avatar-md has-update has-status">
+            <div class="item-label">
+              
+              John
+            </div>
+          </ion-avatar>
+        </div>
+      </div>
+
+      <div class="scroll-item" *ngFor="let i of [1]">
+        <div class="item-avatar">
+          <ion-avatar class="avatar-md has-update has-status">
+            <div class="item-label">
+              
+              John
+            </div>
+          </ion-avatar>
+        </div>
+      </div>
+
+      <div class="scroll-item" *ngFor="let i of [1]">
+        <div class="item-avatar">
+          <ion-avatar class="avatar-md has-update has-status">
+            <div class="item-label">
+              
+              John
+            </div>
+          </ion-avatar>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div>
+    <img src="assets/img/final3.png" alt="">
+    <h4 class="ion-text-center">{{user}}</h4>
+    <h4 class="ion-text-center" >Asistencia</h4>
+    <ion-button expand="block" size="Small" color="tertiary" [routerLink]="['/codigo-qr']">Escanear Codigo QR</ion-button>
+  </div>
+</ion-content>
+
+
+
+<ion-footer >
+  <ion-toolbar color="secondary">
+    <ion-item color="secondary">
+      <ion-datetime value="2021-09-21T20:18:40.394Z" display-timezone="utc"></ion-datetime>
+      
+    </ion-item>
+  </ion-toolbar>
+</ion-footer>
+
+
+
+
+
+
+
+
+

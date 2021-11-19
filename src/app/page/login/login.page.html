@@ -1,0 +1,51 @@
+
+<ion-header>
+    <ion-toolbar color="secondary">
+      <ion-buttons slot="start">
+        <ion-back-button text=" " [routerLink]="['/home']"></ion-back-button>
+      </ion-buttons>  
+    </ion-toolbar>
+</ion-header>
+
+
+<ion-content >
+  <ion-card>
+  <ion-card-header>
+  <ion-card-title> 
+  Iniciar Sesión
+  </ion-card-title>
+<ion-card-content>
+
+
+<form [formGroup]= "formularioLogin">
+
+<ion-item >
+    <ion-label position="floating" >Usuario:</ion-label>
+    <ion-input formControlName= "usuario1" ></ion-input>
+  </ion-item>
+
+  <ion-item >
+    <ion-label position="floating">Contraseña:</ion-label>
+    <ion-input formControlName= "password" type="password" ></ion-input>
+  </ion-item>
+
+</form>
+
+
+</ion-card-content>
+   </ion-card-header>
+   </ion-card>
+
+<ion-button  color="tertiary" expand="block" (click)="logueado()">Ingresar</ion-button>
+<ion-button color="secondary" size="small" fill="clear"expand="block" [routerLink]="['/recuperate']" clear>Restablecer contraseña</ion-button>
+  
+
+  <br>
+  <br>
+  <br>
+  
+  <img src="assets/img/final3.png" alt="">
+</ion-content>
+
+
+
