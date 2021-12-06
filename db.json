@@ -1,0 +1,23 @@
+{
+  "users":[
+    {
+      "id": 1,
+      "nombre": "Cristian"
+    },
+    {
+      "id": 2,
+      "nombre": "Diego"
+    }
+  ],
+  "docente":[
+    {
+      "id": 1,
+      "nombre": "Martin"
+    },
+    {
+      "id": 2,
+      "nombre": "Ursula"
+    }
+  ]
+}
+
